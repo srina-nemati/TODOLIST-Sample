@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".addNewTasksPage">
+
+    <EditText
+        android:id="@+id/Title_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0.75"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/title"
+        android:inputType="text"
+        android:textSize="24sp"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/Details_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="3"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/details"
+        android:inputType="textMultiLine"
+        tools:ignore="LabelFor" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/expDate_editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="2"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/expdate"
+            android:inputType="date"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/DatePickerBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:text="@string/date_picker" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0.5"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/position_you_want_to_add_this_task"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/addBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0.01"
+        android:clickable="true"
+        android:onClick="addNewTaskToList"
+        android:text="@string/add"
+        tools:ignore="LabelFor" />
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TO DO LIST</string>
+    <string name="title">Title</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="details">Details</string>
+    <string name="add">Add</string>
+    <string name="expdate">expDate</string>
+    <string name="edit">Edit</string>
+    <string name="done">Done</string>
+    <string name="position_you_want_to_add_this_task">position you want to add this task</string>
+    <string name="date_picker">Date Picker</string>
+    <string name="welcome">Welcome…!</string>
+    <string name="description">description</string>
+</resources>
